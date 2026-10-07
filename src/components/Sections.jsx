@@ -46,7 +46,7 @@ export function Intro() {
           <p>
             It is office space in ADGM without the fit-out — an office for rent in ADGM where the ADGM office rent
             covers furniture and services, an affordable office space ADGM alternative to a traditional commercial
-            lease, run by <a href={`${MAIN_SITE}/`}>Aegis Coworking</a>.
+            lease, run by Aegis Coworking.
           </p>
         </Reveal>
         <nav className="toc" aria-label="On this page">
@@ -114,7 +114,7 @@ export function Spaces() {
             </article>
           ))}
         </div>
-        <p className="fine center">Yearly figures are 12 × the monthly rent; ADGM government fees are separate. Current offers on <a href={`${MAIN_SITE}/pricing`}>aegiscoworking.ae/pricing</a>.</p>
+        <p className="fine center">Yearly figures are 12 × the monthly rent; ADGM government fees are separate. Ask us on WhatsApp for current offers.</p>
       </div>
     </section>
   )
@@ -160,10 +160,6 @@ export function Tower() {
               </Reveal>
             ))}
           </dl>
-          <p className="fine">
-            Read more: <a href={`${MAIN_SITE}/blog/addax-tower-adgm-business-workspace`}>Addax Tower ADGM for businesses</a> ·{' '}
-            <a href={`${MAIN_SITE}/addax-tower-al-reem-island`}>Addax Tower Business Centre</a>
-          </p>
         </div>
       </div>
     </section>
@@ -192,9 +188,6 @@ export function Lease() {
           ))}
         </ol>
         </div>
-        <p className="fine center light">
-          Learn how <a href={`${MAIN_SITE}/blog/accessrp-adgm-lease-registration`}>AccessRP lease registration</a> works.
-        </p>
       </div>
     </section>
   )
