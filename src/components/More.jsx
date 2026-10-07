@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Reveal } from './Motion'
 import Icon from './Icon'
 import { testimonials, guides, faqs, images, BUSINESS, MAIN_SITE } from '../data/content'
+import { PhoneLink } from './Navbar'
 
 const initials = (n) => n.split(' ').map((p) => p[0]).slice(0, 2).join('')
 
@@ -130,7 +131,7 @@ export function Location() {
           </p>
           <dl className="nap">
             <div><dt>Address</dt><dd>{BUSINESS.name}, {BUSINESS.street}, {BUSINESS.city}, {BUSINESS.country}</dd></div>
-            <div><dt>Phone</dt><dd><a href={BUSINESS.phoneTel}>{BUSINESS.phoneDisplay}</a></dd></div>
+            <div><dt>Phone</dt><dd><PhoneLink>{BUSINESS.phoneDisplay}</PhoneLink></dd></div>
             <div><dt>Email</dt><dd><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></dd></div>
             <div><dt>Tours</dt><dd>Monday–Friday, 9 AM–6 PM · 24/7 access for members</dd></div>
           </dl>
@@ -152,7 +153,7 @@ export function FinalCTA() {
           <p>Tour Addax Tower this week, or get a video walkthrough on WhatsApp today.</p>
           <div className="final-actions">
             <a className="btn btn-sage" href={`${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like to book a tour of Addax Tower.')}`} target="_blank" rel="noopener noreferrer">Book a tour</a>
-            <a className="btn btn-coral" href={BUSINESS.phoneTel}><Icon name="phone" size={16} />{BUSINESS.phoneDisplay}</a>
+            <PhoneLink className="btn btn-coral"><Icon name="phone" size={16} />{BUSINESS.phoneDisplay}</PhoneLink>
           </div>
         </Reveal>
       </div>
