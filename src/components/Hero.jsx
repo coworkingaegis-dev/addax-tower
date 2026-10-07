@@ -57,11 +57,12 @@ function Hero() {
       <div className="wrap hero-head">
         <p className="hero-over hl" style={{ '--d': 0 }}>Level 38 · Al Reem Island · Abu Dhabi Global Market</p>
         <h1 id="hero-title" className="hero-title hl" style={{ '--d': 1 }}>
-          Addax Tower office space,<br /><em>where your ADGM company belongs</em>
+          Addax Tower office space,<br /><em>your guide to Level 38</em>
         </h1>
         <p className="hero-lead hl" style={{ '--d': 2 }}>
-          Serviced private offices, desks and a coworking space on the 38th floor of Addax Tower — with an
-          ADGM-compliant lease, a registered ADGM business address and one all-in monthly rent from AED 1,000.
+          Your guide to working in Addax Tower on Al Reem Island: where Aegis sits (Level 38, Office 3812), how to
+          book a visit, and the serviced offices, desks and coworking space in the tower — with an ADGM-compliant
+          lease and one all-in monthly rent from AED 1,000.
         </p>
         <div className="hero-ctas hl" style={{ '--d': 3 }}>
           <a className="btn btn-sage" href={`${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like to see office space in Addax Tower.')}`} target="_blank" rel="noopener noreferrer">Book a tour</a>
