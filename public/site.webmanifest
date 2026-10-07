@@ -1,0 +1,21 @@
+{
+  "name": "Addax Tower Office Space \u2014 Aegis Coworking",
+  "short_name": "Addax Tower",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#5e4256",
+  "background_color": "#fbf4e8",
+  "display": "standalone"
+}
