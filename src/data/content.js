@@ -16,9 +16,9 @@ import execImg from '../assets/addax-tower-executive-office.webp'
 
 export const SITE_URL = 'https://addaxtower.online'
 export const MAIN_SITE = 'https://www.aegiscoworking.ae'
-export const PAGE_TITLE = 'Addax Tower Office Space for Rent, ADGM | Aegis Coworking'
+export const PAGE_TITLE = 'Addax Tower Al Reem Island: Level 38 Offices & Visitor Guide'
 export const PAGE_DESCRIPTION =
-  'Office space for rent in Addax Tower, Al Reem Island (ADGM): serviced private office from AED 4,500, desks from AED 1,000, ADGM-compliant lease. Book a tour.'
+  'Addax Tower on Al Reem Island, inside ADGM: where to find Aegis on Level 38 (Office 3812), how to book a visit, and the offices and desks available in the tower.'
 export const DATE_PUBLISHED = '2026-10-07'
 export const DATE_MODIFIED = '2026-10-07'
 
@@ -41,6 +41,9 @@ export const BUSINESS = {
     'https://www.facebook.com/aegis.coworking',
   ],
 }
+
+// Card links open WhatsApp instead of other websites
+export const WA_INFO = `${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like more details about your workspace.')}`
 
 export const images = { privateImg, receptionImg, boardroomImg, deskImg, coworkImg, meetingImg, smallImg, servicedImg, execImg }
 
@@ -80,35 +83,35 @@ export const spaces = [
     monthly: 4500, from: true, size: 'Teams of 1–20+',
     text: 'A serviced, furnished office Addax Tower teams lock at night — Small (1–4), Medium (5–10) and Large (10–20+) layouts with skyline views.',
     perks: ['Furnished & lockable', 'Registered ADGM business address', '24/7 secure access', 'Internet, utilities, cleaning included'],
-    link: `${MAIN_SITE}/private-office`,
+    link: WA_INFO,
   },
   {
     id: 'desk', tab: 'Dedicated desk', title: 'Dedicated desk', img: 'deskImg', w: 900, h: 675,
     monthly: 1150, size: '1 person',
     text: 'Your own permanent desk with a registered ADGM business address — the most affordable office for ADGM licence applications.',
     perks: ['Same desk every day', 'ADGM-compliant lease on AccessRP', '24/7 access', 'One-time AED 1,200 due diligence'],
-    link: 'https://dedicateddeskadgm.online/',
+    link: WA_INFO,
   },
   {
     id: 'flexi', tab: 'Flexi desk', title: 'Flexi desk (coworking)', img: 'coworkImg', w: 900, h: 675,
     monthly: 1000, size: '1 person',
     text: 'Any open desk in the coworking space Addax Tower members share — ideal when you need a professional base but no licence address.',
     perks: ['Any open desk', 'WiFi, coffee, print & scan', 'Business lounge', 'Upgrade any time'],
-    link: `${MAIN_SITE}/office-space`,
+    link: WA_INFO,
   },
   {
     id: 'virtual', tab: 'Virtual office', title: 'Virtual office', img: 'receptionImg', w: 900, h: 675,
     monthly: 292, from: true, size: 'Address only',
     text: 'An ADGM business address at Addax Tower with mail handling, for companies that need the address but not the desk.',
     perks: ['ADGM registered address', 'Mail handling & forwarding', 'Directory listing', 'Meeting room credits'],
-    link: 'https://servicedofficeadgm.online/',
+    link: WA_INFO,
   },
   {
     id: 'meeting', tab: 'Meeting room', title: 'Meeting room & boardroom', img: 'boardroomImg', w: 1024, h: 683,
     monthly: null, size: 'By the hour',
     text: 'Book a meeting room or the boardroom by the hour to meet clients in ADGM — no office lease needed.',
     perks: ['Hourly booking', 'Screen & video calls', 'Coffee service', 'Reception welcomes guests'],
-    link: `${MAIN_SITE}/meeting-room`,
+    link: WA_INFO,
   },
 ]
 
@@ -136,14 +139,10 @@ export const why = [
   { icon: 'sun', title: 'Level 38 views', text: 'Light-filled offices looking over Al Reem Island and the Abu Dhabi skyline.' },
 ]
 
+// Two genuine member reviews, word for word — a different pair on each site
 export const testimonials = [
-  { quote: 'Aegis coworking provide super professional services especially with the pricing, and the customer service, i needed the license and a space for one of my team member and they did all within a week time, my team member loved the space. I will highly suggest if any on is looking to get a license and a space in ADGM go for Aegis coworking.', name: 'Ubaid Zia', role: 'Startup Founder' },
-  { quote: 'I was specifically looking for the cheapest coworking space in ADGM and wanted a privacy environment rather than just a desk. Aegis offered a good balance of price, location, and facilities.', name: 'Naveeda Haseeb', role: 'Startup Founder' },
-  { quote: 'Aegis Coworking is a convenient workspace in Abu Dhabi for startups and growing companies. The flexible workspace options, meeting room and hot desk helped us avoid the commitment of a traditional office.', name: 'Kasim Malikkandy', role: 'Consultant' },
   { quote: 'We were comparing affordable coworking space in ADGM and found Aegis to be a very practical choice. The workspace feels professional while keeping costs affordable.', name: 'John Paints', role: 'Software Analyst' },
-  { quote: 'Very happy with the service from Aegis Coworking. We needed a professional business address in Abu Dhabi without committing to a large traditional office, and Aegis provided a practical solution. The team is responsive and professional.', name: 'Uzair Tahir', role: 'Tech Startup Founder' },
-  { quote: 'For businesses looking for a low cost office in ADGM, Aegis provides flexible office space and a professional seating. The team made the setup process very easy.', name: 'Haseeb Awan', role: 'Entrepreneur' },
-  { quote: 'Nice suitable area for coworking for Adam incorporation.', name: 'Ali Kutty Faizy', role: 'Entrepreneur' },
+  { quote: 'Aegis Coworking is a convenient workspace in Abu Dhabi for startups and growing companies. The flexible workspace options, meeting room and hot desk helped us avoid the commitment of a traditional office.', name: 'Kasim Malikkandy', role: 'Consultant' },
 ]
 
 export const guides = [
@@ -162,22 +161,20 @@ export const faqs = [
   {
     q: 'How much is office space for rent in Addax Tower?',
     a: 'At Aegis Coworking on Level 38 of Addax Tower, a serviced private office starts from AED 4,500 per month, a dedicated desk is AED 1,150, a flexi desk AED 1,000 and a virtual office from AED 292 per month.',
-    link: { text: 'Private office rent in ADGM: 2026 guide', url: `${MAIN_SITE}/blog/private-office-rent-adgm-cost-what-to-expect-in-2026` },
   },
   {
     q: 'Is Addax Tower in ADGM?',
     a: 'Yes. Addax Tower is on Al Reem Island, which is within the Abu Dhabi Global Market (ADGM) jurisdiction, so an office in Addax Tower gives you an ADGM business address.',
-    link: { text: 'Is Al Reem Island part of ADGM?', url: `${MAIN_SITE}/blog/is-al-reem-island-part-of-adgm` },
+    link: { text: 'Addax Tower ADGM: business workspace on Al Reem Island', url: 'https://www.aegiscoworking.ae/blog/addax-tower-adgm-business-workspace' },
   },
   {
     q: 'Where exactly is Aegis Coworking in Addax Tower?',
     a: 'On the 38th floor of Addax Tower, Office 3812, Al Reem Island, RT3, Abu Dhabi.',
-    link: { text: 'Addax Tower ADGM for businesses', url: `${MAIN_SITE}/blog/addax-tower-adgm-business-workspace` },
   },
   {
     q: 'Do you provide an ADGM-compliant lease agreement?',
     a: 'Yes. Aegis is an ADGM-compliant lease agreement space provider: private offices and dedicated desks come with a lease registered on AccessRP that you can use for your ADGM licence application and renewals.',
-    link: { text: 'How AccessRP lease registration works', url: `${MAIN_SITE}/blog/accessrp-adgm-lease-registration` },
+    link: { text: 'How AccessRP lease registration works', url: 'https://www.aegiscoworking.ae/blog/accessrp-adgm-lease-registration' },
   },
   {
     q: 'Are the offices furnished and serviced?',
@@ -194,7 +191,6 @@ export const faqs = [
   {
     q: 'Is there coworking space in Addax Tower?',
     a: 'Yes. The coworking space at Aegis on Level 38 offers flexi desks from AED 1,000 per month and day passes from AED 100, with WiFi, coffee and the business lounge.',
-    link: { text: 'Affordable coworking on Al Reem Island', url: `${MAIN_SITE}/blog/affordable-coworking-al-reem-island-adgm` },
   },
   {
     q: 'Can I use the office for my ADGM licence?',
@@ -211,5 +207,13 @@ export const faqs = [
   {
     q: 'How do I book a viewing?',
     a: 'Message us on WhatsApp or call +971 50 392 6316. Tours run Monday to Friday, 9 AM–6 PM, and we can send a video walkthrough if you are abroad.',
+  },
+  {
+    q: 'How do I find Aegis Coworking inside Addax Tower?',
+    a: 'Aegis Coworking is on Level 38 of Addax Tower, Office 3812, Al Reem Island. Message us on WhatsApp before you come and we will share directions and meet you for the tour.',
+  },
+  {
+    q: 'What is on Level 38 at Aegis?',
+    a: 'Level 38 has the Aegis reception, serviced private offices, dedicated and flexi desks, a coworking area and meeting rooms — all on one floor.',
   },
 ]
